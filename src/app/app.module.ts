@@ -13,6 +13,8 @@ import { EditRecipeComponent } from './pages/edit-recipe/edit-recipe.component';
 import { NewRecipeComponent } from './pages/new-recipe/new-recipe.component';
 import { ShowRecipeComponent } from './pages/show-recipe/show-recipe.component';
 
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,8 @@ import { ShowRecipeComponent } from './pages/show-recipe/show-recipe.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [RecipeService],
   bootstrap: [AppComponent]
